@@ -1,3 +1,9 @@
+import Navbar from "./components/LandingPage/Navbar";
+
 export default function Home() {
-  return <>Hello world I am developing cupid</>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
