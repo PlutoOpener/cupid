@@ -5,12 +5,12 @@ import { CiMenuKebab } from "react-icons/ci";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="w-screen h-16 shadow-md flex items-center justify-between px-4">
+    <nav className="w-screen h-16 shadow-md flex items-center justify-between px-4 bg-white">
       <Image src={logo} alt="cupid" className="h-12 w-12" />
 
       <div className="flex items-center justify-around w-1/3">
-        <button className=" py-1 px-4 text-green rounded-md font-bold text-md">
-          Sign in
+        <button className=" py-1 px-4 bg-green rounded-md text-gray text-sm font-light">
+          Login
         </button>
         <CiMenuKebab className="text-xl" />
       </div>
