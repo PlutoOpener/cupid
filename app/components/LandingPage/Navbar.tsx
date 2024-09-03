@@ -17,10 +17,10 @@ const Navbar: React.FC = () => {
           Products <MdKeyboardArrowDown />
         </div>
         <div className="flex items-center justify-center ">
-          Reources <MdKeyboardArrowDown />
+          Resources <MdKeyboardArrowDown />
         </div>
         <div className="flex items-center justify-center ">
-          Contact salse <MdKeyboardArrowDown />
+          Contact sales <MdKeyboardArrowDown />
         </div>
         <div className="flex items-center justify-center ">
           Pricing <MdKeyboardArrowDown />
