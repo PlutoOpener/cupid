@@ -28,7 +28,7 @@ export default function Home() {
             </h1>
 
             <h1 className="opacity-50 mt-2">
-              Managing projects doesn't have to be complicated. At cupid we
+              Managing projects doesn&apos;t have to be complicated. At cupid we
               provide a streamlined platform that simplifies project management,
               boosts team collaboration, and drives your projects to success.
             </h1>
