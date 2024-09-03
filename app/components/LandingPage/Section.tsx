@@ -16,7 +16,7 @@ const Section = () => {
         <span className="text-2xl text-green xl:text-3xl">Cupid</span>
       </div>
 
-      <div className="hidden xl:flex xl:items-center xl:justify-between ">
+      <div className=" xl:flex xl:items-center xl:justify-between ">
         <div className="w-5/6 flex items-center justify-around flex-col gap-4 xl:w-4/6 m-auto rounded-md  mt-8 p-4">
           <div className="">
             <Image src={easy} alt="Easy" width={70} height={70} />
