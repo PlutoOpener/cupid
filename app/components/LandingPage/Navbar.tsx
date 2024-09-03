@@ -3,6 +3,7 @@ import React from "react";
 import logo from "../../../public/cupid.png";
 import { CiMenuKebab } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { GoogleLogin } from "@react-oauth/google";
 
 const Navbar: React.FC = () => {
   return (
@@ -27,9 +28,15 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div className="flex items-center justify-around  gap-4 xm:justify-center xm:gap-2 ">
-        <button className=" py-1 px-4 bg-green rounded-md text-gray text-sm font-light">
-          Login
-        </button>
+        <GoogleLogin
+          onSuccess={(credentialResponse) => {
+            console.log(credentialResponse);
+          }}
+          onError={() => {
+            console.log("Login Failed");
+          }}
+        />
+
         <CiMenuKebab className="text-xl md:hidden" />
       </div>
     </nav>
