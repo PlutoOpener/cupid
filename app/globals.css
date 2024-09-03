@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .totototot {
   color: #edffed;
+}
+
+* {
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }

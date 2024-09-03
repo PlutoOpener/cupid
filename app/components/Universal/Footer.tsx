@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="w-screen mt-6 p-4 overflow-x-hidden border border-white border-t-gray border-opacity-20">
+      <footer className="w-screen mt-6 p-4 xl:px-10 overflow-x-hidden border border-white border-t-gray border-opacity-20">
         <div className="flex items-center justify-between">
           <div>
             <Image src={logo} alt="cupid" className="h-12 w-12" />
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 xl:flex xl:items-baseline  xl:justify-start xl:gap-8">
           <div className="flex items-start justify-center flex-col gap-2">
             <h1 className="text-md">Company</h1>
 
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className=" w-screen mt-4 border border-white border-t-gray border-opacity-5 p-4">
+      <div className=" w-screen mt-4 border border-white border-t-gray border-opacity-5 p-4 xl:px-10">
         <h1 className="opacity-25 text-sm">
           By continuing past this page, you agree to our Terms of Service,
           Cookie Policy, Privacy Policy and Content Policies. All trademarks are
