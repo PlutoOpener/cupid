@@ -6,6 +6,7 @@ import Section from "./components/LandingPage/Section";
 import Footer from "./components/Universal/Footer";
 
 import { useRef } from "react";
+import { GoogleLogin } from "@react-oauth/google";
 export default function Home() {
   return (
     <div className="w-screen h-screen">
@@ -33,9 +34,19 @@ export default function Home() {
               boosts team collaboration, and drives your projects to success.
             </h1>
 
-            <button className="px-10 py-2 bg-green text-gray mt-12 rounded-md">
+            {/* <button className="px-10 py-2 bg-green text-gray mt-12 rounded-md">
               Get started
-            </button>
+            </button> */}
+            <div className="mt-12">
+              <GoogleLogin
+                onSuccess={(credentialResponse) => {
+                  console.log(credentialResponse);
+                }}
+                onError={() => {
+                  console.log("Login Failed");
+                }}
+              />
+            </div>
           </div>
         </div>
 
