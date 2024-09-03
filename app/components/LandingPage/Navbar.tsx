@@ -6,7 +6,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="w-screen h-16 shadow-md flex items-center justify-between xl:px-8  xm:px-2 bg-white ">
+    <nav className="w-screen h-16 shadow-md flex items-center justify-between xl:px-8  xm:px-2 bg-white px-2">
       <Image src={logo} alt="cupid" className="h-12 w-12" />
 
       <div className="md:flex lg:flex xl:flex 2xl:flex  items-center justify-between gap-6 hidden">
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           Pricing <MdKeyboardArrowDown />
         </div>
       </div>
-      <div className="flex items-center justify-around xm:justify-center xm:gap-2 ">
+      <div className="flex items-center justify-around  gap-4 xm:justify-center xm:gap-2 ">
         <button className=" py-1 px-4 bg-green rounded-md text-gray text-sm font-light">
           Login
         </button>

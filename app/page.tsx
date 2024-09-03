@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <div className="bg-none mt-8 ">
         {/* Image for small screen */}
-        <div className="xl:flex xl:items-center xl:justify-between px-10">
+        <div className="xl:flex xl:items-center xl:justify-between xl:px-10">
           <div className="w-screen h-fit xl:w-1/2 ">
             <Image
               src="https://media.licdn.com/dms/image/D4D12AQEn7iaT75cWSw/article-cover_image-shrink_600_2000/0/1662465946904?e=2147483647&v=beta&t=rB49pwFfArb1YzjQj74s-yLJ5o_adI8Ea8Iy2jGh2tg"
