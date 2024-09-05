@@ -4,6 +4,7 @@ import logo from "../../../public/cupid.png";
 import { CiMenuKebab } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { GoogleLogin } from "@react-oauth/google";
+import { jwtDecode } from "jwt-decode";
 
 const Navbar: React.FC = () => {
   return (
@@ -31,6 +32,9 @@ const Navbar: React.FC = () => {
         <GoogleLogin
           onSuccess={(credentialResponse) => {
             console.log(credentialResponse);
+            const codedUserData = credentialResponse?.credential;
+            const decodedUserdata = jwtDecode(codedUserData!);
+            console.log(decodedUserdata);
           }}
           onError={() => {
             console.log("Login Failed");

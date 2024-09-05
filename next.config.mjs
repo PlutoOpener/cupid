@@ -6,6 +6,7 @@ const nextConfig = {
       "img.icons8.com",
       "www.flaticon.com",
       "upload.wikimedia.org",
+      "lh3.googleusercontent.com",
     ],
   },
 };
